@@ -57,7 +57,8 @@ button:hover {
 }
 
 @media only on screen (max-width: 1179px) {
-
-
-
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
 }    
