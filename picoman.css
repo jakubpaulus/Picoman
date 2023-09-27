@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Ranga&family=Reenie+Beanie&family=Single+Day&display=swap');
+
+*, ::before, ::after 
+{box-sizing: border-box;}
+
+.pozadi{background-color: chocolate;}
+
+.nadpis {
+    font-family: 'Single Day', cursive;
+    height: 110px;
+    margin-left: 520px;
+    margin-top: 50px;}
+
+#menu-container {
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    background-color: #f2d61c78;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 60px;
+    }
+
+button {
+    font-family: 'Kalam', cursive;
+    padding: 5px 10px;
+    background-color: #000000db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 75px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+.pizzaman {
+    height: 450px;
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+}
+
+.pikoman {
+    height: 400px;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;  
+}
