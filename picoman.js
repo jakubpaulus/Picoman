@@ -1,8 +1,3 @@
-console.log(`ahoj ty buzíku, co tu chceš?`);
- let mnozstviFetu = 1;
- console.log(`tvé množství fetu je` + 1);
-
-
  // Funkce pro aktualizaci času
  function updateTimer() {
     const timerElement = document.getElementById('timer');
@@ -13,3 +8,11 @@ console.log(`ahoj ty buzíku, co tu chceš?`);
 
 // Spustit aktualizaci času ihned po načtení stránky
 setInterval(updateTimer, 1000); // Aktualizace každou sekundu
+
+//alerty
+let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?')
+console.log('Tvé jméno je ' + jmenoFetaka + '.')
+
+let mnozstviFetu = 1;
+window.alert(`Tvé množství fetu je ${mnozstviFetu}.`)
+
