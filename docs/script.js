@@ -16,7 +16,13 @@ else if (mnozstviFetu > MINIMUM) {
 }
 
 else {
-    window.alert('To je málo, budeš se muset víc snažit!');
+    if (!isNan (mnozstviFetu)) {
+        window.alert('To je málo, budeš se muset víc snažit!');
+    }
+    else {
+        window.alert('To není číslo ty pako.')
+        mnozstviFetu = window.prompt('Kolik toho teda máš?')
+    }
 }
 
 
