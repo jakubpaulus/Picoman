@@ -12,16 +12,16 @@ if (mnozstviFetu === MINIMUM) {
 }
 
 else if (mnozstviFetu > MINIMUM) {
-    window.alert('Proč jis nepřišel dřív?!');
+    window.alert('Proč jsi nepřišel dřív?! Dávno bychom tě vzali!');
 }
 
 else {
-    if (!isNan (mnozstviFetu)) {
-        window.alert('To je málo, budeš se muset víc snažit!');
+    if (!isNaN (mnozstviFetu)) {
+        window.alert(`To je málo, budeš se muset víc snažit!`);
     }
     else {
-        window.alert('To není číslo ty pako.')
-        mnozstviFetu = window.prompt('Kolik toho teda máš?')
+        window.alert(`To není číslo ty pako.`);
+        mnozstviFetu = window.prompt(`Kolik toho teda máš?`);
     }
 }
 
