@@ -1,26 +1,23 @@
-console.log(`POG!`);
+let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?');
+console.log('Tvé jméno je ' + jmenoFetaka + '.');
+window.alert('Zdravím tě ' + jmenoFetaka + '.');
 
-const MINIMUM = 100;
+let mnozstviFetu = window.prompt('Kolik toho u sebe máš?');
+console.log(`Tvé množství fetu je ${mnozstviFetu}.`);
 
-const jmenoUzivatele = window.prompt('Jak se jmenuješ?', 'Péťa');
-window.alert(`Ahoj, ${jmenoUzivatele}.`);
+const MINIMUM = 5;
 
-let vekUzivatele = window.prompt('Jak jsi starý, dobrodruhu?', 69);
-
-if (vekUzivatele === MINIMUM) {
-    window.alert('Vítej na webu!');
+if (mnozstviFetu === MINIMUM) {
+    window.alert('Vítej mezi námi!');
 }
 
-else if (vekUzivatele > MINIMUM) {
-    window.alert(`Minimální věk si překonala o  ${vekUzivatele - MINIMUM} let.`);
+else if (mnozstviFetu > MINIMUM) {
+    window.alert('Proč jis nepřišel dřív?!');
 }
 
 else {
-    if (!isNaN (vekUzivatele)) {
-        window.alert(`Do dosažení minimálního věku ti zbývá ${MINIMUM - vekUzivatele} let.`);
-    }
-    else {
-        window.alert(`Výraz ${vekUzivatele} není číslo.`)
-    }
-    vekUzivatele = window.prompt('Jaký je tvůj skutečný věk?', 101);
+    window.alert('To je málo, budeš se muset víc snažit!');
 }
+
+
+
