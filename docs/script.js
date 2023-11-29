@@ -33,8 +33,8 @@ else {
     }
 }
 
+const datum = new Date();
 
+let dobaFetovani = window.prompt (`Od kdy dealuješ?`, 'YYYY-MM-DD');
 
-
-
-
+window.alert(`Už dealuješ ${Math.floor((Date.parse(datum) - Date.parse(new Date(dobaFetovani)))/(1000*60*60*24))} dní.`)
