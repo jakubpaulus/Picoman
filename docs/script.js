@@ -38,3 +38,20 @@ const datum = new Date();
 let dobaFetovani = window.prompt (`Od kdy dealuješ?`, 'YYYY-MM-DD');
 
 window.alert(`Už dealuješ ${Math.floor((Date.parse(datum) - Date.parse(new Date(dobaFetovani)))/(1000*60*60*24))} dní.`)
+
+const hesloGang = 'Travkajedobra';
+let vitejZpatky = false;
+let spatneHeslo = 0;
+
+do {
+    if (window.prompt(`Zadej heslo gangu ${jmenoFetaka}.`) === hesloGang) {
+        window.alert(`Vítej zpátky ${jmenoFetaka}.`);
+        vitejZpatky = true
+    }
+    else  {
+       spatneHeslo ++;
+    }
+        if (spatneHeslo >= 3) {
+        window.alert('Odejdi než to skončí špatně!')
+        }
+} while(vitejZpatky = true)
