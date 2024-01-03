@@ -1,6 +1,13 @@
 let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?');
+if (jmenoFetaka.length <= 3) {
+    window.alert('Jméno, které má pouze 3 znaky není jméno.');
+    let jmenoFetaka = window.prompt('Jak se teda jmenuješ?');
+    window.alert('Zdravím tě ' + jmenoFetaka + '.');
+}
+else {
+    window.alert('Zdravím tě ' + jmenoFetaka + '.');
+}
 console.log('Tvé jméno je ' + jmenoFetaka + '.');
-window.alert('Zdravím tě ' + jmenoFetaka + '.');
 
 let mnozstviFetu = window.prompt('Kolik toho u sebe máš?');
 console.log(`Tvé množství fetu je ${mnozstviFetu}.`);
@@ -55,3 +62,4 @@ do {
         window.alert('Odejdi než to skončí špatně!')
         }
 } while(vitejZpatky = true)
+
