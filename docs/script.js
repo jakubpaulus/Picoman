@@ -7,7 +7,6 @@ if (jmenoFetaka.length <= 3) {
 else {
     window.alert('Zdravím tě ' + jmenoFetaka + '.');
 }
-console.log('Tvé jméno je ' + jmenoFetaka + '.');
 
 let mnozstviFetu = window.prompt('Kolik toho u sebe máš?');
 console.log(`Tvé množství fetu je ${mnozstviFetu}.`);
@@ -54,6 +53,7 @@ do {
     if (window.prompt(`Zadej heslo gangu ${jmenoFetaka}.`) === hesloGang) {
         window.alert(`Vítej zpátky ${jmenoFetaka}.`);
         vitejZpatky = true
+        break; 
     }
     else  {
        spatneHeslo ++;
@@ -63,3 +63,12 @@ do {
         }
 } while(vitejZpatky = true)
 
+const welcomeFet = ['1 gram', '3 gramy']
+
+if (mnozstviFetu > MINIMUM && vekFetaka >= MINIMALNIVEK ) {
+    window.alert(`Tady máš ${welcomeFet[1]} jako donate do začátku.`);
+}
+
+else {
+    window.alert(`Tady máš ${welcomeFet[0]} abys neřekl že jsme škrti.`)
+}
