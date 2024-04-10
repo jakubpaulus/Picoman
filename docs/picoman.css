@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Ranga&family=Reenie+Beanie&family=Single+Day&display=swap');
+
+*, ::before, ::after 
+{box-sizing: border-box;}
+
+.pozadi{background-color: chocolate;}
+
+header {
+    font-family: 'Single Day', cursive;
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    display: flex;
+    text-align: center;
+}
+
+#menu-container {
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    background-color: #f2d61c78;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 90px;
+    max-height: 350px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    }
+
+button {
+    font-family: 'Kalam', cursive;
+    padding: 5px 10px;
+    background-color: #000000db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    
+}
+
+.pizzaman {
+    height: 450px;
+    bottom: 0px;
+}
+
+.pikoman {
+    height: 400px;
+    right: 30px;
+    bottom: 0px; 
+    padding-top: 50px; 
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) { 
+    header {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .main-menu {
+        flex-direction: column;
+    }
+
+    .pizzaman {
+        margin-top: 50px;
+        display: flex;
+        order: 3;
+    }
+}
+
