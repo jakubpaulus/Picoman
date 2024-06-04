@@ -3,7 +3,8 @@
 *, ::before, ::after 
 {box-sizing: border-box;}
 
-.pozadi{background-color: chocolate;}
+.svetlepozadi{background-color: chocolate;}
+.tmavepozadi{background-color: crimson;}
 
 header {
     font-family: 'Single Day', cursive;
@@ -88,3 +89,7 @@ button:hover {
     }
 }
 
+.darkmode {
+    background-color: aliceblue;
+    color: black;
+}

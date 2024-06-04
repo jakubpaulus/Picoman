@@ -1,11 +1,21 @@
+//Tato část kódu dělá to, že uživateli zobrazí vyskakovací okno, které se ho ptá, jak se jmenuje. Pokud zadá správnou hodnotu, tak se objeví další vyskakovací okno, které ho pozdraví jeho jménem. Pokud je hodnota špatně zadaná, tedy má méně než 3 znaky, tak se ho zeptá znova.
 let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?');
 if (jmenoFetaka.length <= 3) {
     window.alert('Jméno, které má pouze 3 znaky není jméno.');
     let jmenoFetaka = window.prompt('Jak se teda jmenuješ?');
     window.alert('Zdravím tě ' + jmenoFetaka + '.');
+    console.log(jmenoFetaka);
 }
 else {
     window.alert('Zdravím tě ' + jmenoFetaka + '.');
+    console.log(jmenoFetaka);
+}
+
+
+//Tato část kódu se ptá uživatele, kolik má u sebe daného materiálu a kolik mu je let. Pokud splňuje dané podmínky, obejví se mu vyskakovací okno s pozitivní zprávou, pokud ale zadal hodnoty, které nesplňují podmínky, tak se mu objeví vyskakovací okno s negativní zprávou.
+const podminky = {
+    MINIMUM: 5,
+    MINIMALNIVEK: 18
 }
 
 let mnozstviFetu = window.prompt('Kolik toho u sebe máš?');
@@ -16,8 +26,6 @@ if (isNaN (mnozstviFetu)) {
     mnozstviFetu = window.prompt(`Kolik toho teda máš?`);
 }
 
-const MINIMUM = 5;
-const MINIMALNIVEK = 18;
 
 let vekFetaka = window.prompt ('Kolik ti je let feťáku?')
 
@@ -25,16 +33,16 @@ if (isNaN (vekFetaka)) {
     let vekFetaka = window.prompt('Tohle není číslo, kolik ti je teda let?')
 }
 
-if (Number(mnozstviFetu) === MINIMUM && vekFetaka >= MINIMALNIVEK) {
+if (Number(mnozstviFetu) === podminky.MINIMUM && vekFetaka >= podminky.MINIMALNIVEK) {
     window.alert('Vítej mezi námi!');
 }
 
-else if (mnozstviFetu > MINIMUM && vekFetaka >= MINIMALNIVEK) {
+else if (mnozstviFetu > podminky.MINIMUM && vekFetaka >= podminky.MINIMALNIVEK) {
     window.alert('Proč jsi nepřišel dřív?! Dávno bychom tě vzali!');
 }
 
 else {
-    if (mnozstviFetu < MINIMUM || vekFetaka < MINIMALNIVEK) {
+    if (mnozstviFetu < podminky.MINIMUM || vekFetaka < podminky.MINIMALNIVEK) {
         window.alert (`Přijď až budeš splňovat podmínky.`);
     }
 }
@@ -72,3 +80,15 @@ if (mnozstviFetu > MINIMUM && vekFetaka >= MINIMALNIVEK ) {
 else {
     window.alert(`Tady máš ${welcomeFet[0]} abys neřekl že jsme škrti.`)
 }
+
+document.querySelector('.darkmode').addEventListener('click', () => {
+    console.log('klik');
+    if (document.querySelector('body').classList.contains('tmavepozadi')) {
+        document.querySelector('body').classList.remove('tmavepozadi');
+        document.querySelector('body').classList.add('svetlepozadi')
+      }
+      else {
+        document.querySelector('body').classList.remove('svetlepozadi');
+        document.querySelector('body').classList.add('tmavepozadi');
+      }
+})
