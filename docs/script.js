@@ -43,7 +43,7 @@ else if (mnozstviFetu > podminky.MINIMUM && vekFetaka >= podminky.MINIMALNIVEK) 
 
 else {
     if (mnozstviFetu < podminky.MINIMUM || vekFetaka < podminky.MINIMALNIVEK) {
-        window.alert (`Přijď až budeš splňovat podmínky.`);
+        window.alert (`To není ideální, ale co už. Lidí je dnes málo.`);
     }
 }
 
