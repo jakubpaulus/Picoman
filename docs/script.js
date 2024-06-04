@@ -47,12 +47,17 @@ else {
     }
 }
 
+
+//Tato část kódu se ptá uživatele, do kdy už dealuje a následně mu vypočítá jak dlouho už dealuje (ve dnech).
+//Tento kód je převzatý ze cvičení!!!
 const datum = new Date();
 
 let dobaFetovani = window.prompt (`Od kdy dealuješ?`, 'YYYY-MM-DD');
 
 window.alert(`Už dealuješ ${Math.floor((Date.parse(datum) - Date.parse(new Date(dobaFetovani)))/(1000*60*60*24))} dní.`)
 
+
+//Tato část kódu se ptá uživatele na heslo gangu. Pokud ho zadá dobře může pokračovat pokud ne, tak se ho stránka ptá do doby než zadá heslo dobře.
 const hesloGang = 'Travkajedobra';
 let vitejZpatky = false;
 let spatneHeslo = 0;
@@ -73,7 +78,7 @@ do {
 
 const welcomeFet = ['1 gram', '3 gramy']
 
-if (mnozstviFetu > MINIMUM && vekFetaka >= MINIMALNIVEK ) {
+if (mnozstviFetu > podminky.MINIMUM && vekFetaka >= podminky.MINIMALNIVEK ) {
     window.alert(`Tady máš ${welcomeFet[1]} jako donate do začátku.`);
 }
 
