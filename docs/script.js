@@ -12,7 +12,7 @@ else {
 }
 
 
-//Tato část kódu se ptá uživatele, kolik má u sebe daného materiálu a kolik mu je let. Pokud splňuje dané podmínky, obejví se mu vyskakovací okno s pozitivní zprávou, pokud ale zadal hodnoty, které nesplňují podmínky, tak se mu objeví vyskakovací okno s negativní zprávou.
+//Tato část kódu se ptá uživatele, kolik má u sebe daného materiálu a kolik mu je let. Pokud splňuje dané podmínky, obejví se mu vyskakovací okno s pozitivní zprávou, pokud ale zadal hodnoty, které nesplňují podmínky, tak se mu objeví vyskakovací okno s méně pozitivní zprávou.
 const podminky = {
     MINIMUM: 5,
     MINIMALNIVEK: 18
