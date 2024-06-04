@@ -6,6 +6,12 @@
     <title>Testovací projekt</title>
     <script type="module" src="script.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript">
+        document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
+            if(document.readyState=='loaded' || document.readyState=='complete')
+                alert('<%: TempData["Resultat"]%>');
+        }
+        </script>
 </head>
 <body class="svetlepozadi tmavepozadi">
     <header>
@@ -16,7 +22,7 @@
                 <div id="menu-container">
                     <h3>Vítej, rádi mezi sebe přivítáme nové picomany.</h3>
                     <button>Stát se picomanem</button>
-                    <button class="darkmode">Dark mode</button>
+                    <button class="backgroundmode">Background mode</button>
                     <button>Nastavení hry</button>
                 </div>
             <img src="./pikoman gif.gif" alt="" class="pikoman">

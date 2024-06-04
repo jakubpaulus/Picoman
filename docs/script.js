@@ -76,6 +76,8 @@ do {
         }
 } while(vitejZpatky = true)
 
+
+//Tato část kódů pouze vyhodí uživateli vyskakovací okno, na základě předešlé podmínky a jejího splněnění, či částečnho splnění. S tím že kód bere hodnoty z pole.    
 const welcomeFet = ['1 gram', '3 gramy']
 
 if (mnozstviFetu > podminky.MINIMUM && vekFetaka >= podminky.MINIMALNIVEK ) {
@@ -86,7 +88,9 @@ else {
     window.alert(`Tady máš ${welcomeFet[0]} abys neřekl že jsme škrti.`)
 }
 
-document.querySelector('.darkmode').addEventListener('click', () => {
+
+//Tato část kódu mění barvu pozadí stránky po kliknutí na tlačítko.
+document.querySelector('.backgroundmode').addEventListener('click', () => {
     console.log('klik');
     if (document.querySelector('body').classList.contains('tmavepozadi')) {
         document.querySelector('body').classList.remove('tmavepozadi');
